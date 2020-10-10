@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\SpecFlowAdditionFeature - Copy.feature.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="nunit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+    <PackageReference Include="SpecFlow" Version="3.4.8" />
+    <PackageReference Include="SpecFlow.NUnit" Version="3.4.8" />
+    <PackageReference Include="SpecFlow.NUnit.Runners" Version="3.4.8" />
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.4.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ICT3101_Calculator\ICT3101_Calculator.csproj" />
+  </ItemGroup>
+
+</Project>
